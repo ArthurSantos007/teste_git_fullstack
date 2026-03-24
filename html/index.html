@@ -11,11 +11,11 @@
     <header>
         <nav class="navbar">  
             <div class="titulo">Nosso Projeto no Git em Colaboração</div>
-                <div class="links">
-                    <a href="#home">Home</a>
-                    <a href="#estudo">Estudo</a>
-                    <a href="#contato">Contato</a>
-            </div>
+                <ul class="links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#estudo">Estudo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
         </nav>
     </header>
 
@@ -24,14 +24,14 @@
         <section id="home" class="inicio">
             <h2>Nosso Projeto no Git</h2>
             <p>Esse é um projeto teste para testarmos nosso conhecimento sobre o Git e o GitHub. Assim teremos a possibilidade de demonstrar o que estamos aprendendo</p>
-        
-            <h3>Nosso Projetos até agora</h3>
-            <ul>
-    <li>Landing Page de HTML-CSS</li>
-    <li>Figma</li>
-    <li>Projeto no Git</li>
-            </ul>
-
+            <article class="projetos">
+                <h3>Nosso Projetos até agora</h3>
+                <ul>
+                    <li>Landing Page de HTML-CSS</li>
+                    <li>Figma</li>
+                    <li>Projeto no Git</li>
+                </ul>
+            </article>
         </section>
 
             <section id="estudo" class="estudos">
@@ -41,11 +41,45 @@
         </section>
 
         <section class="tecnologias">
-            <article>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>FIGMA</p>
-                <p>GIT</p>
+            <article class="card">
+
+                <div class="card-front">
+                    <h3>HTML</h3>
+                </div>
+                <div class="card-back">
+                    <p>Dificuldade: Baixa</p>
+                    <p>O HTML é uma linguagem de marcação usada para criar páginas web.</p>
+                </div>
+                
+
+            </article>
+
+            <article class="card">
+                <div class="card-front">
+                    <h3>CSS</h3>
+                </div>
+                <div class="card-back">
+                    <p>Dificuldade: Média</p>
+                    <p>O CSS é uma linguagem de estilo usada para definir a apresentação de documentos HTML.</p>
+                </div>
+                
+
+            </article>
+
+            <article class="card">
+
+                <h3>FIGMA</h3>
+                <p>Dificuldade: Baixa</p>
+                <p>O FIGMA é uma ferramenta de design colaborativo usada para criar interfaces de usuário.</p>
+
+            </article>
+
+            <article class="card">
+
+                <h3>GIT</h3>
+                <p>Dificuldade: Média</p>
+                <p>O GIT é um sistema de controle de versão distribuído usado para rastrear alterações em arquivos e coordenar o trabalho em equipes.</p>
+
             </article>
 
         </section>
@@ -56,12 +90,12 @@
 
             <form>
                 
-                <div>
+                <div class="formulario">
                     <label for="nome">Seu Nome:</label>
                     <input type="text" id="nome" placeholder="Digite seu nome..." required>
                 </div>
 
-                <div>
+                <div class="formulario">
                     <label for="mensagem">Sua Mensagem:</label>
                     <input type="text" id="mensagem" placeholder="Digite sua mensagem...">
                 </div>
