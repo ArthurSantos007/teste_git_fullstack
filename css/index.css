@@ -1,3 +1,139 @@
+:root{
+    --primary-color: #007bff;
+    --secondary-color: rgb(199, 199, 199);
+    --text-color: #333;
+    --bg: white ;
+    --nav-color: darkblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: white;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text-color);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.links a:hover{
+    color: var(--secondary-color);
+    transform: translateY(10px);
+}
+
+.inicio{
+    padding: 20px;
+}
+
+.inicio h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.inicio p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.projetos{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: #333 0px 0px 2px;
+}
+
+.projetos li{
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.estudos{
+    padding: 20px;
+}
+
+.tecnologias{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    background-color: var(--bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+.contato{
+    padding: 20px;
+    text-align: center;
+}
+
+.contato h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contato p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.rodape{
+    background-color: var(--bg);
+    text-align: center;
+    padding: 10px;
 }
